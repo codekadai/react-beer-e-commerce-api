@@ -3,6 +3,19 @@ import products from "./data/products.js";
 import stockPrice from "./data/stock-price.js";
 
 const server = http.createServer((req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
+  if (req.method === "OPTIONS") {
+    res.writeHead(204);
+    res.end();
+    return;
+  }
+
   res.setHeader("Content-Type", "application/json");
 
   if (req.url === "/api/products" && req.method === "GET") {
