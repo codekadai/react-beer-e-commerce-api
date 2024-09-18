@@ -1,4 +1,4 @@
-## Beer-commerce
+## Beer-commerce API
 
 ### Prerequisites
 
