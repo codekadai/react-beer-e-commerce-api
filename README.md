@@ -13,5 +13,5 @@ Run the server with the following command:
 npm run start
 ```
 
-- Go to [http://localhost:3001/products](http://localhost:3001/products) to see all products
-- Go to [http://localhost:3001/products](http://localhost:3001/stock-price/10041) to see stock and price of 10041 sku's beer
+- Go to [http://localhost:3001/api/products](http://localhost:3001/api/products) to see all products
+- Go to [http://localhost:3001/api/stock-price/10041](http://localhost:3001/api/stock-price/10041) to see stock and price of 10041 sku's beer
